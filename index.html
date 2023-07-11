@@ -16,11 +16,13 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="src/css/style.css" />
+    <link rel="stylesheet" href="src/css/reset.css" />
+    <link rel="stylesheet" href="src/css/responsive.css">
   </head>
   <body>
     <div class="fundo-video">
-      <video src="" autoplay loop muted class="video">
-        <source src="src/video/video-mario.mp4" type="video/mp4" />
+      <video autoplay loop class="video" muted>
+        <source src="./src/video/video-mario.mp4" type="video/mp4" />
       </video>
     </div>
     <header class="cabecalho">
@@ -33,8 +35,8 @@
       </a>
       <nav>
         <ul class="menu">
-          <li>Home</li>
-          <li>Detalhes</li>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Detalhes</a></li>
         </ul>
       </nav>
     </header>
@@ -46,14 +48,28 @@
           alt="Imagem do título do filme"
         />
         <p class="descricao">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor
-          blanditiis error magnam necessitatibus maxime soluta quod reiciendis,
-          a ipsum ipsa aperiam laboriosam quaerat delectus, expedita, ea quia
-          nihil laudantium labore.
+          Mario é um encanador junto com seu irmão Luigi. Um dia, eles vão parar
+          no reino dos cogumelos, governado pela Princesa Peach, mas ameaçado
+          pelo rei dos Koopas, que faz de tudo para conseguir reinar em todos os
+          lugares.
         </p>
         <button class="botao-trailer">Veja o trailer</button>
       </div>
       <img src="src/images/super-mario-chars.png" class="mario" />
+      <div class="modal">
+        <div class="conteudo-modal">
+          <span class="fechar-modal">X</span
+          ><iframe
+            width="516"
+            height="315"
+            src="https://www.youtube.com/embed/bnYSkJSs1h0"
+            title="Super Mario Bros. O Filme | Trailer Final Dublado"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            allowfullscreen
+          ></iframe>
+        </div>
+      </div>
     </main>
   </body>
 </html>
